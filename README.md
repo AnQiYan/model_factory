@@ -100,3 +100,15 @@ micromamba install -y -n base -f model-resource/environment.yml && \ <br>
 
 
 <h2>通过docker来构建镜像</h2>
+使用ubuntu终端来执行构建镜像脚本
+
+
+![img_8.png](img_8.png)
+等待一会完成后...
+
+现在可以使用<b><i>docker images -a</i></b>查看所构建的镜像的id
+
+
+
+然后通过镜像id的前4位<b><i>docker run -it 5245 /bin/bash</b></i>来运行镜像了
+
